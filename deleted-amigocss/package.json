@@ -1,0 +1,16 @@
+{
+  "name": "amigocss",
+  "version": "1.0.0",
+  "description": "AmigoCSS - A Simple CSS Framework for CSS Lovers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "cssframework",
+    "amigocss"
+  ],
+  "author": "Ami Amigo",
+  "license": "Apache-2.0"
+}

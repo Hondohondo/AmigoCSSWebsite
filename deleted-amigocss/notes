@@ -1,0 +1,165 @@
+1. Typography
+// Font sizes and weights
+// - Adapted from a minor third(1.2) type scale with base 10px
+// A predefined range of font sizes (from 10px all the way to 98px)
+//Suggestions: Normal text: Use 16px to 32px. For long text try 20px or even bigger
+//Headlines: Go really big (50+) and bold (600+) depending on your website personality
+//Good to avoid less than 400 for font-weights - because the text becomes hard to read
+
+//Reading experience
+/*
+- Use less than 75 characters per line. Any line over 90 characters (long lines) becomes hard to read
+- For normal text, use line height between 1.5 and 2, if text is big you can go below 1.5 (e.g 1.1 or 1.2). The smaller or longer the text, the larger the line height has to be
+- If your headlines look unnatural, you can decrease letter spacing e.g 0px (without letter spacing) vs -3.5px with letter spacing
+- Experiment with all caps with shorter titles. Make them small and bold and increase letter-spacing
+- It's a convention never to justify text
+- Don't center long text blocks. Small blocks are fine
+*/
+
+type-scale.com
+-When it comes to choosing font sizes it's good to have a system, so that we don't have to always think about what size we want to give to a certain element. system reduces the amount of work in choosing, and reduces inconsistency in design.
+-If you don't have limited choices you're forced to try each pixel to find and see which one fits best, but with a system you save time by only having fewer choices to pick from. if one doesn't work (e.g.62px) you immediately go to the next one (74px) as opposed to moving from (62px, 63px, 64px, 69px...etc)
+- So here is the system and whenever you want to choose a font size to use you can start here and choose one of these options. Of course, you can always try and mix and come up with your own font sizes if these don't work in your particular situation.
+
+- Important to know, a lot of these design option are my own opinions and you would say plenty are subjective...
+
+//FONT FAMILY (A few options to start with from Google Fonts - Most are disabled, Pick the ones you wanna enable)
+
+//SYSTEM FONTS (Default in Mac, Ubuntu, Windows, etc.)
+
+//SERIF FONTS
+
+
+
+//SANS-SERIF FONTS
+//---Inter Google Font with 3 weights
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+//---Rubik Google Font with 4 weights
+//@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+//---Cardo Google Font with 3 weights
+//@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+//---Inter Google Font with 3 weights
+//@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+//---Lora Google Font with 3 weights
+//@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+
+
+//HEADINGS
+
+.heading-one {
+
+}
+.heading-two {
+
+}
+
+.heading-three {
+
+}
+
+.heading-four {
+
+}
+
+/*
+
+I think it is as follows:
+
+h1 is 2 em (2*16=32px)
+h2 is 1.5 em (1.5*16=24px)
+h3 is 1.3 em (1.3*16=20.8px)
+h4 is 1 em (1 * 16 = 16px)
+h5 is 0.8 em (0.8 * 16 = 12.8px)
+h6 is 0.7 em (0.7 * 16 = 1.2px)
+An em is not the same as a pixel. It is a relative way of looking at sizes. With that said I think most browsers default to 16px (or 1em).
+font-weight for all is bolder, and the height of 1em is 16px (Also Normal text height is 1em)
+*/
+
+
+-----------
+/*SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+12 values
+Using this system you can be creative by coming up with new values - let's say you want a div with width of 720px, Well We don't have 72rem, but we have 80rem. So you can have a container with 80rem and make it have padding left and right of 4rem ...and there you have it. 72rem.
+Also as a trick when using your own custom classes but don't want to come up with new values...You can try to see what are the center values. E.g we have 48 and 64 now what if 48 is too small and 64 is too large...instead of just guessing you can find a middle point between 48 and 64 and that is 56.
+These same tricks can be used when working with the font system too. But in fonts...Avoiding values that have odd numbers in them. Let's say you think font size of 30 is a bit too small, and the next one of 36 is a bit too big...Instead of picking the mid point of 3, you can just add 2 from 30 and get 32 or omit 2 from 36 and get 34, Odd numbers as font sizes looks a bif odd (pun intended) in my opinion
+*/
+
+/*FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+15 values
+*/
+
+/*If I combine the two systems here is what I get (I highly doubt if I will use this...It's too much -- so many values to pick from)
+
+2 / 4 / 8 / 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 32 / 36 / 44 / 48 / 52 / 62 / 64 / 74 / 80 / 86 / 96 / 98 / 128
+
+24 values
+*/
+
+old cdn after deleting https://cdn.jsdelivr.net/npm/amigocss@1.0.0/main.css
+
+About
+Amigo CSS - A simple, custom-first and intuitive CSS framework for CSS lovers.
+
+-------------
+-------------
+To be added in design-ingredients:
+//3. Images / Illustrations
+//4. Icons _icons.scss
+//5. Shadows
+//6.border radius _border-radius.scss
+// 8. Visual Hierarchy - _visual-hierarchy.scss
+//9. User Experience (UX) - _ux.scss
+//10. Components _components-scss
+
+
+--------------
+Spacing
+-------------
+The original spacing system based on multiples of 16 plus a few small sizes.
+
+I added the following eight so I could use the spacing system in widths and heights too. You may decide to limit your options by just picking numbers from the original system.
+
+Ideas:
+- Tons of white space between sections
+- a lot of white space between groups. Between groups not as big as between sections
+- vertically we need much space than horizontal as a general guideline
+- white space between elements
+- inside groups of elements try to use whitespace instead of lines
+- the more elements belong together, the closer they should be (Law of proximity). If elements are not close to one another then they should be farther apart, so a user can passive unrelated elements
+- Start with a lot of white space...then remove some. Always remember too much white space look detached, while too little looks crammed
+-Match design choices, eg too big text, much white space. Small text...small white space
+- Choosing values for your white space. try following hard rule just like we did on font sizes.( The font system is adapted for text..so dont use it for white space...)
+ A hard rule such as using multiples of 16 for all spaces (margins and paddings). Of course you have  to add some smaller values too like 2,4,8 and 12 but from there is all multiples of 16 and some are even skipped to just limit your choices. Limit your choices is actually a good idea, because having to think every time what spacing you want to use can be tiring but a system can help you to choose values easily. If one value doesn't fit pick a next one. This makes designing easier and faster.
+ */
+
+ New package.json
+ {
+   "name": "amigocss",
+   "version": "1.0.0",
+   "description": "Amigo CSS - A simple, custom-first and intuitive CSS framework for CSS lovers.",
+   "repository": {
+     "type": "git",
+     "url": "git+https://github.com/amiamigo97/amigocss.git"
+   },
+   "keywords": [
+     "css",
+     "cssframework",
+     "amigocss"
+   ],
+   "author": "Ami Amigo",
+   "license": "Apache-2.0",
+   "bugs": {
+     "url": "https://github.com/amiamigo97/amigocss/issues"
+   },
+   "homepage": "https://github.com/amiamigo97/amigocss#readme"
+ }
